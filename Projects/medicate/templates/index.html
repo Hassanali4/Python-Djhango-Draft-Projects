@@ -1,0 +1,242 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css'"> </script>
+  <link rel="stylesheet" href="{% static 'styles.css' %}" type="text/css">
+  <link rel="stylesheet" type="text/css" href="{% static 'fontawesome/css/all.min.css' %}">
+  <title>Home</title>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="header">
+      <div class="title">
+        <p>Medicine Donation</p>
+        <div class="logo1">
+        <img src="{% static 'logo2.png' %}"  alt="logo2"class="logo" >
+
+        </div>
+        <div class="menu2">
+          <ul>
+            <a href="{% static 'donation.html' %}"><li>Donation</li></a>
+            <a href="{% static 'Medicine.html' %}"><li>Medicine</li></a>
+            <a href="{% static 'contact us.html' %}"><li>Contact Us</li></a>
+            <a href="{% static 'about us.html' %}"><li>About Us</li></a>
+            <a href="{% static 'Sign-In.html' %}"><li>Sign in</li></a>
+            <a href="{% static 'medicate registration.html' %}"><li>Sign UP</li></a>
+            <a href="#"><li>More</li></a>
+          </ul>
+
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <section class="home1">
+       <div class="slider">
+          <div class="slide active" style="background-image: url('med/1.jpg')">
+              <div class="container">
+                  <div class="caption">
+                      <h1> Donation To Medicine</h1>
+                      <p>50% population of Pakistan don’t take their
+                        prescribed medication because they can’t afford it. </p>
+                      <a href="">DONATE NOW</a>
+                  </div>
+              </div>
+          </div>
+          <div class="slide" style="background-image: url('med/2.jpg')">
+              <div class="container">
+                  <div class="caption">
+                      <h1> Donation To Medicine</h1>
+                      <p>50% population of Pakistan don’t take their
+                        prescribed medication because they can’t afford it.</p>
+                      <a href="">DONATE NOW</a>
+                  </div>
+              </div>
+          </div>
+          <div class="slide" style="background-image: url('med/3.jpg')">
+              <div class="container">
+                  <div class="caption">
+                      <h1>Donation To Medicine</h1>
+                      <p>50% population of Pakistan don’t take their
+                        prescribed medication because they can’t afford it.</p>
+                      <a href="">DONATE NOW</a>
+                  </div>
+              </div>
+          </div>
+          <div class="slide" style="background-image: url('med/4.jpg')">
+              <div class="container">
+                  <div class="caption">
+                      <h1>Donation To Medicine</h1>
+                      <p>50% population of Pakistan don’t take their
+                        prescribed medication because they can’t afford it.</p>
+                      <a href="">DONATE NOW</a>
+                  </div>
+              </div>
+          </div>
+          <div class="slide" style="background-image: url('med/5.jpg')">
+              <div class="container">
+                  <div class="caption">
+                      <h1>Donation To Medicine</h1>
+                      <p>50% population of Pakistan don’t take their
+                        prescribed medication because they can’t afford it.</p>
+                      <a href="">DONATE NOW</a>
+                  </div>
+              </div>
+          </div>
+       </div>
+
+      <!-- controls  -->
+      <div class="controls">
+          <div class="prev"><</div>
+          <div class="next">></div>
+      </div>
+
+      <!-- indicators -->
+      <div class="indicator">
+      </div>
+
+    </section>
+    <script src="{% static 'script.js' %}"></script>
+<div class="hometitle">
+  <div class="ti">
+    <h1>Stop medication <br>waste. Save lives.</h1>
+    <h2>Destruction of unused medication is not just wasteful, it’s also costly and harmful to the environment. Donate unused medications to help your community and benefit your organization.</h2>
+  </div>
+  <div class="btn">
+    <ul>
+      <a href="{% static 'medicate registration.html' %}"><li><p>Sign UP My Organization</p></li></a>
+    </ul>
+  </div>
+  <div class="im">
+    <img src="{% static 'homeimage\1.png' %}" alt="not show of image">
+  </div>
+</div>
+
+
+<div class="bo">
+  <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+        <img class="object-cover object-center rounded" alt="hero" src="{% static 'https://source.unsplash.com/700x600/?medicine,donation' %}">
+      </div>
+      <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-green-900">Project Medicate
+          <br class="hidden lg:inline-block">Medicine Donation Solution
+        </h1>
+        <p class="mb-8 leading-relaxed">50% population of Pakistan don’t take their prescribed medication because they can’t afford it. With soaring copays, deductibles, and insurance costs, many people are making impossible choices between medications, food and housing, gas to get to work, and more..</p>
+        <div class="flex justify-center">
+          <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Let's Help</button>
+          <!--<button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-green-200 rounded text-lg">Button</button>-->
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+  <section>
+  <div class="video">
+    <h3>Donation To Medicine</h3>
+    <video src="{% static 'vidoe\donation.mp4' %}"class="video1" autoplay poster="{% static 'poster\post.png' %}" autoplay controls>
+
+    </video>
+    <p>The system is for providing free medicine to needy<br>
+       patients who cannot afford their medicines for treatment.<br>
+      Our goal is to make available unused medicines to needy<br>
+       patients which will benefit them and the nation’s poor<br>
+      society for their benefit. Our site “Medicate” will provide<br>
+         the following features in such ways that such a goal can<br>
+          be fulfilled in helping the needy patients who cannot<br>
+          afford the medicine.</p>
+  </div>
+</section>
+
+<section >
+  <div class="ic">
+    <img src="{% static 'icon people/group.png' %}" class="icc1" alt="does not display image"  >
+    <h1 id="icc1">people served</h1>
+    <img src="{% static 'icon people/team.png' %}" class="icc2" alt="does not display image" >
+    <h1 id="icc2">people sensitized</h1>
+    <img src="{% static 'icon people/like.png' %}" class="icc3" alt="does not display image" >
+    <h1 id="icc3">people like</h1>
+  </div>
+
+</section>
+<section class="imagemedicine">
+  <img src="{% static 'image med\1.jpg' %}" alt="does not display image" class="image1">
+  <img src="{% static 'image med\5.jpg' %}" alt="does not display image" class="image2">
+  <img src="{% static 'image med\6.jpg' %}" alt="does not display image" class="image3">
+
+</section>
+
+<footer>
+  <div class="main-cotent">
+    <div class="left box">
+      <h2>About us</h2>
+      <div class="content">
+        <p>50% population of Pakistan don’t take their prescribed medication because they can’t afford it. With soaring copays, deductibles, and insurance costs,</p>
+        <div class="social">
+          <a href="#"><span class="fab fa-facebook-f"></span></a>
+          <a href="{% static 'https://twitter.com/YousafSarwar' %}"><span class="fab fa-twitter"></span></a>
+          <a href="#"><span class="fab fa-instagram"></span></a>
+          <a href="{% static 'https://youtu.be/k60OSl5quQ8' %}"><span class="fab fa-youtube"></span></a>
+
+        </div>
+      </div>
+    </div>
+    <div class="center box">
+      <h2>Address</h2>
+      <div class="content">
+        <div class="place">
+          <span class="fas fa-map-marker"></span>
+          <span class="text">Dhing shah,pial road kasur</span>
+
+        </div>
+        <div class="place">
+          <span class="fas fa-phone"></span>
+          <span class="text">+923090995731</span>
+
+        </div>
+        <div class="place">
+          <span class="fas fa-envelope"></span>
+          <span class="text">yousaf6593@gmail.com</span>
+
+        </div>
+      </div>
+    </div>
+<div class="right box">
+  <h2>Constact Us</h2>
+  <div class="content">
+    <form class="" action="index.html" method="post">
+      <div class="email2">
+
+
+      <div class="text" >Email </div>
+          <input type="email  " required>
+
+
+  </div>
+  <div class="msg">
+  <div class="text">Meassage</div>
+      <textarea name="feadback" rows="2" cols="25" required></textarea>
+      </div>
+      <div class="btn2">
+        <button type="button" >Send</button>
+      </div>
+    </form>
+  </div>
+
+</div>
+</div>
+</footer>
+
+</div>
+
+</body>
+</html>

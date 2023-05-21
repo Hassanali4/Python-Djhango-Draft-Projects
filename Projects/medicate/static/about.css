@@ -1,0 +1,212 @@
+.h1{
+  position: relative;
+  font-size: 30px;
+}
+.h1 h2{
+font-size: 17px;
+  color: #3d4554;
+}
+.imge{
+
+position: relative;
+display: flex;
+margin-top: 50px;
+margin-left:  -50px;
+  width: 100%;
+ flex-direction: row;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.imge1{
+padding: 45px;
+flex: 1;
+margin-left: 120px;
+}
+.imge1 p{
+
+line-height: 2em;
+margin-left: 10px;
+font-size: 22px;
+}
+
+.imge2{
+flex: 1;
+padding: 45px;
+margin-top: -7px;
+}
+.imge2 p{
+line-height: 2em;
+margin-left: 19px;
+font-size: 22px;
+
+}
+.imge3{
+padding: 10px;
+flex: 1;
+margin-top: 35px;
+
+}
+.imge3 p{
+line-height: 2em;
+margin-left: 19px;
+margin-top: -1px;
+font-size: 22px;
+
+}
+@media screen and (max-width 760px) {
+.imge{
+flex-direction: column;
+}
+}
+.click{
+position: relative;
+text-align: center;
+flex: none;
+}
+.click  p{
+font-size: 25px;
+}
+.click ul a li{
+list-style: none;
+margin-left:615px;
+font-size: 25px;
+margin-top: -54px;
+}
+.donated{
+display: flex;
+width: 100%;
+height: 1000px;
+background: #008000;
+}
+
+.donated img{
+margin-left: -110px;
+width: 350px;
+}
+.donated h1{
+margin-left: 410px;
+margin-top: 65px;
+font-size: 50px;
+color: white;
+}
+                /*credit card */
+.fo{
+width: 70%;
+height: 600px;
+background: white;
+margin-top: 237px;
+margin-left: -850px;
+}
+.error {
+  color: red;
+  border-color: red;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+
+}
+#zip{
+margin-left: -10px;
+margin-top: -2px;
+height: -5%;
+}
+
+#email{
+margin-left: -4px;
+}
+
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,.col-50,.col-75 {
+  padding: 0 10px;
+}
+
+.container {
+  background-color: #FFFFFF;
+  padding: 3px 18px 13px 18px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  box-shadow: 0 0 2rem 0 rgba(168, 180, 194, 0.37);
+}
+
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid rgb(130, 26, 26);
+  border-radius: 1px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.amt{
+padding: 15px 30px;
+}
+
+.btn {
+  background-color: #008000;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 3px;
+  margin-left: 330px;
+  cursor: pointer;
+  font-size: 17px;
+  box-shadow: 0 0 1rem 0 rgba(99, 123, 150, 0.329);
+
+}
+
+.btn:hover {
+  background-color: #0CBABA;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns
+  stack on top of each other instead of next to each other (also change the direction
+  - make the "cart" column go on top)
+*/
+@media (max-width: 800px) {
+  .row {
+      flex-direction: column-reverse;
+  }
+  .col-25 {
+      margin-bottom: 20px;
+  }
+}
